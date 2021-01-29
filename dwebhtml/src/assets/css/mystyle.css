@@ -1,0 +1,63 @@
+body,html{
+    margin: 0;
+    background: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.dweb{
+    background: #00000060;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    border-radius: .25rem;
+    
+}
+
+
+/* 头部导航 */
+#top-menu{
+    /* vw是可视宽度百分之多少，vh是可视高度 */
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+}
+
+/* 侧边栏左 */
+#left-menu{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1001;
+}
+#left-menu #left-btn{
+    font-size: 40px;
+    color: #ffc815;
+    position: absolute;
+    left: 220px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+/* 页面内容 */
+#content{
+    /* height: 1200px; */
+    position: relative;
+    top: 60px;
+    margin-left: 220px;
+    margin-right: 20px;
+    /* padding前面一个是上下 后面一个是左右 */
+    padding: 10px 0px;
+}
+/* 页面底部 */
+#footer{
+    color: #ffffff;
+    /* 字体大小 */
+    font-size: 18px;
+    /* 字体粗 */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    padding:10px 0;
+}

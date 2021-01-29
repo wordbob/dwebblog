@@ -1,44 +1,52 @@
 <template>
   <div id="app">
-    <el-switch v-model="value" active-color="#13ce66" inactive-color="#ff4949">
-    </el-switch>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <!-- 头部导航 -->
+    <div id="top-menu" class="dweb"></div>
+    <!-- 侧边栏 左 导航 -->
+    <div id="left-menu" class="dweb">
+      <i id="left-btn" class="el-icon-menu"></i>
     </div>
-    <router-view />
+    <!-- 页面内容 -->
+    <div id="content">
+      <el-row :gutter="20">
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+      </el-row>
+      <el-row :gutter="20">
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+      </el-row>
+      <el-row :gutter="20">
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+      </el-row>
+      <el-row :gutter="20">
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+        <el-col :span="8"><div class="dweb" style="height:250px"></div></el-col>
+      </el-row>
+      <div id="footer" class="dweb">
+        <span>Copyright @ wordbob</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        value: true
-      }
-    }
-  };
+export default {
+  data() {
+    return {
+      value: true,
+    };
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.el-col{
+  margin-top: 5px;
 }
 </style>
